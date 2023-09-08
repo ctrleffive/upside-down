@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .logo-mask {
-  mask-image: url(logo.svg);
+  mask-image: url(./logo.svg);
   mask-repeat: no-repeat;
   mask-position: center;
   mask-size: 70% 70%;
