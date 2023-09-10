@@ -1,3 +1,11 @@
+import { LogoIntro } from "./components/LogoIntro"
+
 export const App = () => {
-  return <div className="logo-mask bg-no-repeat bg-cover w-screen h-screen bg-[url('/assets/intro-bg.jpg')]" />;
+  const onReady = () => {
+    // console.log("");
+  }
+
+  return <>
+    <LogoIntro onReady={onReady} />
+  </>
 }

@@ -1,0 +1,46 @@
+.logo-mask {
+  mask-image: url(/logo.svg);
+  mask-repeat: no-repeat;
+  animation-name: logoMaskReveal;
+  animation-duration: 10s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes logoMaskReveal {
+  0% {
+    mask-position: 50% 0%;
+    mask-size: 10000px;
+  }
+
+  90% {
+    mask-position: 50% 50%;
+    mask-size: 200px;
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    mask-position: 50% 50%;
+    mask-size: 200px;
+  }
+}
+
+.logo-mask-reveal {
+  animation-name: logoOGReveal;
+  animation-delay: 9s;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in;
+  opacity: 0;
+}
+
+@keyframes logoOGReveal {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
